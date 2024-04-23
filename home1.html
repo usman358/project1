@@ -22,172 +22,326 @@
     </script>
   </head>
   <body style="background-color: #f8f9fa" class="w-full">
-    <div
-      style="
-        position: sticky;
-        top: 0;
+    <div class="block lg:hidden">
+      <div
+        style="
+          position: sticky;
+          top: 0;
 
-        z-index: 1;
-        width: 100%;
-      "
-      class="content-center w-[100%] lg:content-center w-[100%] bg-color:black sm:w-fill grid grid-col-1 sm:bg-white"
-    >
-      <nav class="flex px-4 bg-white sm:flex w-full pb-4 pl-8 lg:w-full mx-0">
-        <a href="#"> <img src="./images/Logo.svg" class="mt-5 w-[171px]" /></a>
-        <div class="sm:flex w-full">
-          <ul
-            class="hidden md:w-full pr-16 space-x-4 sm:grid grid-col-1 sm:flex"
-          >
-            <ul class="lg:flex sm:flex w-full content-center">
-              <li
-                class="flex rounded-full border-2 lg:w-96 h-12 mt-4 ml-auto mr-auto sm:w-32"
-                style="background-color: white; border-color: #dee2e6"
-              >
-                <input
-                  type="text"
-                  id="mySearch"
-                  placeholder="Search"
-                  class="rounded-full lg:w-96 pl-4 outline-none"
-                />
-                <img
-                  src="./images/Icon Button (2).svg"
-                  class="pr-1 w-12 h-[40px] pt-1"
-                />
-              </li>
+          z-index: 1;
+          width: 100%;
+        "
+        class="content-center w-[100%] lg:content-center w-[100%] bg-color:black sm:w-fill grid grid-col-1 sm:bg-white"
+      >
+        <nav class="flex px-4 bg-white sm:flex w-full pb-4 pl-8 lg:w-full mx-0">
+          <a href="#">
+            <img src="./images/Logo.svg" class="mt-5 w-[171px]"
+          /></a>
+          <div class="sm:flex w-full">
+            <ul class="lg:pr-0 md:w-full space-x-4 sm:grid grid-col-1 pr-16">
+              <ul class="lg:flex sm:flex w-full content-center">
+                <li
+                  class="flex rounded-full border-2 lg:w-96 h-12 mt-4 ml-auto mr-auto sm:w-32"
+                  style="background-color: white; border-color: #dee2e6"
+                >
+                  <input
+                    type="text"
+                    id="mySearch"
+                    placeholder="Search"
+                    class="rounded-full lg:w-96 pl-4 outline-none"
+                  />
+                  <img
+                    src="./images/Icon Button (2).svg"
+                    class="pr-1 w-12 h-[40px] pt-1"
+                  />
+                </li>
 
-              <li>
-                <button
-                  style="
-                    font-family: inter;
-                    color: white;
-                    background-color: #7749f8;
-                  "
-                  class="font-semibold text-base px-4 mt-5 rounded py-2"
-                >
-                  Open Shop
-                </button>
-              </li>
-              <li>
-                <button
-                  style="
-                    font-family: inter;
-                    color: black;
-                    background-color: white;
-                  "
-                  class="font-semibold text-base px-4 mt-5 rounded py-2"
-                >
-                  Contact
-                </button>
-              </li>
-              <li>
-                <button class="mt-5">
-                  <img src="./images/Icon Button.svg" />
-                </button>
-              </li>
-            </ul>
-
-            <!----second navbar--->
-            <div class="w-full">
-              <div class="mx-0 w-full">
-                <ul
-                  class="sm:grid grid-col-2 lg:flex py-3 mt-6 items-center justify-center"
-                  style="background-color: black; position: sticky"
-                >
-                  <li>
-                    <a href="#">
-                      <p
-                        style="font-family: inter; color: white"
-                        class="font-normal text-base leading-7 sm:pl-4 pl-4"
-                      >
-                        Pet Stores
-                      </p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><p
-                        style="font-family: inter; color: white"
-                        class="font-normal text-base leading-7 ml-10"
-                      >
-                        Products
-                      </p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><p
-                        style="font-family: inter; color: white"
-                        class="font-normal text-base leading-7 ml-10"
-                      >
-                        Vets
-                      </p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <p
-                        style="font-family: inter; color: white"
-                        class="font-normal text-base leading-7 ml-10"
-                      >
-                        Training
-                      </p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <p
-                        style="font-family: inter; color: white"
-                        class="font-normal text-base leading-7 ml-10"
-                      >
-                        Grooming
-                      </p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <p
-                        style="font-family: inter; color: white"
-                        class="font-normal text-base leading-7 ml-10"
-                      >
-                        Buy & Sell
-                      </p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <p
-                        style="font-family: inter; color: white"
-                        class="font-normal text-base leading-7 ml-10"
-                      >
-                        Adopt
-                      </p>
-                    </a>
-                  </li>
-                </ul>
+                <li>
+                  <button
+                    style="
+                      font-family: inter;
+                      color: white;
+                      background-color: #7749f8;
+                    "
+                    class="font-semibold text-base px-4 mt-5 rounded py-2"
+                  >
+                    Open Shop
+                  </button>
+                </li>
+                <li>
+                  <button
+                    style="
+                      font-family: inter;
+                      color: black;
+                      background-color: white;
+                    "
+                    class="font-semibold text-base px-4 mt-5 rounded py-2"
+                  >
+                    Contact
+                  </button>
+                </li>
+                <li>
+                  <button class="mt-5">
+                    <img src="./images/Icon Button.svg" />
+                  </button>
+                </li>
+              </ul>
+              <!----second navbar--->
+              <div class="w-full">
+                <div class="mx-0 w-full">
+                  <ul
+                    class="sm:grid grid-col-2 lg:flex py-3 mt-6 items-center justify-center"
+                    style="background-color: black; position: sticky"
+                  >
+                    <li>
+                      <a href="#">
+                        <p
+                          style="font-family: inter; color: white"
+                          class="font-normal text-base leading-7 sm:pl-4 pl-4"
+                        >
+                          Pet Stores
+                        </p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><p
+                          style="font-family: inter; color: white"
+                          class="font-normal text-base leading-7 ml-10"
+                        >
+                          Products
+                        </p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><p
+                          style="font-family: inter; color: white"
+                          class="font-normal text-base leading-7 ml-10"
+                        >
+                          Vets
+                        </p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <p
+                          style="font-family: inter; color: white"
+                          class="font-normal text-base leading-7 ml-10"
+                        >
+                          Training
+                        </p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <p
+                          style="font-family: inter; color: white"
+                          class="font-normal text-base leading-7 ml-10"
+                        >
+                          Grooming
+                        </p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <p
+                          style="font-family: inter; color: white"
+                          class="font-normal text-base leading-7 ml-10"
+                        >
+                          Buy & Sell
+                        </p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <p
+                          style="font-family: inter; color: white"
+                          class="font-normal text-base leading-7 ml-10"
+                        >
+                          Adopt
+                        </p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </ul>
-          <button
-            id="menuBtn"
-            class="md:hidden row-flex focus:outline-none pr-4 mt-4"
-            style="float: right"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              x="0px"
-              y="0px"
-              width="30"
-              height="30"
-              viewBox="0 0 50 50"
+            </ul>
+            <button
+              id="menuBtn"
+              class="md:hidden row-flex focus:outline-none pr-4 mt-4"
+              style="float: right"
             >
-              <path
-                d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"
-              ></path>
-            </svg>
-          </button>
-        </div>
-      </nav>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="30"
+                height="30"
+                viewBox="0 0 50 50"
+              >
+                <path
+                  d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </nav>
+      </div>
     </div>
+
+    <div class="hidden lg:block">
+      <div
+        style="
+          position: sticky;
+          top: 0;
+
+          z-index: 1;
+          width: 100%;
+        "
+        class="content-center w-[100%] lg:content-center w-[100%] bg-color:black sm:w-fill grid grid-col-1 sm:bg-white"
+      >
+      
+        <nav class="flex px-4 bg-white sm:flex w-full pb-4 pl-8 lg:w-full mx-0">
+          <a href="#">
+            <img src="./images/Logo.svg" class="mt-5 w-[171px]"
+          /></a>
+          <div class="sm:flex w-full">
+            <ul class="lg:pr-0 md:w-full space-x-4 sm:grid grid-col-1 pr-16">
+              <ul class="lg:flex sm:flex w-full content-center">
+                <li
+                  class="flex rounded-full border-2 lg:w-96 h-12 mt-4 ml-auto mr-auto sm:w-32"
+                  style="background-color: white; border-color: #dee2e6"
+                >
+                  <input
+                    type="text"
+                    id="mySearch"
+                    placeholder="Search"
+                    class="rounded-full lg:w-96 pl-4 outline-none"
+                  />
+                  <img
+                    src="./images/Icon Button (2).svg"
+                    class="pr-1 w-12 h-[40px] pt-1"
+                  />
+                </li>
+
+                <li>
+                  <button
+                    style="
+                      font-family: inter;
+                      color: white;
+                      background-color: #7749f8;
+                    "
+                    class="font-semibold text-base px-4 mt-5 rounded py-2"
+                  >
+                    Open Shop
+                  </button>
+                </li>
+                <li>
+                  <button
+                    style="
+                      font-family: inter;
+                      color: black;
+                      background-color: white;
+                    "
+                    class="font-semibold text-base px-4 mt-5 rounded py-2"
+                  >
+                    Contact
+                  </button>
+                </li>
+                <li>
+                  <button class="mt-5">
+                    <img src="./images/Icon Button.svg" />
+                  </button>
+                </li>
+              </ul>
+            </nav>
+              <!----second navbar--->
+              <div class="w-full">
+                <div class="mx-0 w-full">
+                  <ul
+                    class="sm:grid grid-col-2 lg:flex py-3 mt-6 items-center justify-center"
+                    style="background-color: black; position: sticky"
+                  >
+                    <li>
+                      <a href="#">
+                        <p
+                          style="font-family: inter; color: white"
+                          class="font-normal text-base leading-7 sm:pl-4 pl-4"
+                        >
+                          Pet Stores
+                        </p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><p
+                          style="font-family: inter; color: white"
+                          class="font-normal text-base leading-7 ml-10"
+                        >
+                          Products
+                        </p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><p
+                          style="font-family: inter; color: white"
+                          class="font-normal text-base leading-7 ml-10"
+                        >
+                          Vets
+                        </p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <p
+                          style="font-family: inter; color: white"
+                          class="font-normal text-base leading-7 ml-10"
+                        >
+                          Training
+                        </p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <p
+                          style="font-family: inter; color: white"
+                          class="font-normal text-base leading-7 ml-10"
+                        >
+                          Grooming
+                        </p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <p
+                          style="font-family: inter; color: white"
+                          class="font-normal text-base leading-7 ml-10"
+                        >
+                          Buy & Sell
+                        </p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <p
+                          style="font-family: inter; color: white"
+                          class="font-normal text-base leading-7 ml-10"
+                        >
+                          Adopt
+                        </p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </ul>
+           
+          </div>
+        
+      </div>
+    
 
     <div class="bg-white">
       <div class="sm:flex sm:flex lg:flex lg:flex items-center m-auto">
